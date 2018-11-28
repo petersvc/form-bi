@@ -101,20 +101,20 @@ body, .container-fluid {
 }
 .form-group input{
   border: none;
-  background: rgba(230,230,230,1);
-  color: rgba(53,80,160,0.3);
+  background: rgba(250,250,250,1);
+  color: rgba(53,80,160,0.6);
   font-size: 1.3em;
   margin-bottom: 25px;
-  box-shadow: 2px 2px 2px rgba(20,20,20,0);
   border-radius: 30px;
   height: 45px;
-  padding-left:75px;
+  padding-left:65px;
+  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.3);
 }
 .form-group i{
   position: absolute;
-  padding: 15px 16px;
-  text-indent: 10px;
-  border-right: 1px solid rgba(53,80,160,0.3);
+  margin-top: -55px;
+  text-indent: 22px;
+  border-right: 0px solid rgba(53,80,160,0.3);
   color: rgba(53,80,160,0.7);
 }
 .form-group input::placeholder {
@@ -123,14 +123,21 @@ body, .container-fluid {
   font-weight: bold;
   transform:translate3d(0,-2px,0);
 }
+.form-group input:focus::placeholder{ 
+  color: rgba(53,80,160,1);
+}
+.form-group input:focus + i{ 
+  color: rgba(53,80,160,1);
+}
 .form-group input:focus {
   border-color: transparent;
   box-shadow: none;
-  color: #3550a0;
+  box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+  color: rgba(53,80,160,1);
 }
 #send-btn {
   margin-top: 0;
-  background-color: rgba(53,80,160,1);;
+  background-color: rgba(53,80,160,1);
   color:rgba(255,255,255,1);
   display: inline-block;
   font-size: 1.2em;
@@ -175,12 +182,12 @@ body, .container-fluid {
 }
 #facebook-btn i {
   margin-top: 0px;
-  margin-left: 3%;
+  margin-left: 2%;
 }
 #facebook-btn span{
   position: absolute;
   font-size: 15px;
   font-weight: bold;
   margin-top: 7px;
-  margin-left: 77px;
+  margin-left: 85px;
 }
